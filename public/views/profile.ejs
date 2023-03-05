@@ -1,0 +1,312 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>My Profile</title>
+	<meta charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+</head>
+
+<style>
+ :root {
+    --darkest: #1D1B33;
+    --medium: #4F518C;
+    --mediumpurple: #907AD6;
+    --lightpurple: #DABFFF;
+    --lightblue: #7FDEFF;
+  }
+  
+  body{
+    background-color: var(--medium);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: var(--lightblue);
+  }
+  p{
+    text-align: center;
+    font-family: Garamond, Montserrat, sans-serif;
+    color: var(--lightpurple);
+    font-size: 28px;
+  }
+  .button {
+    background: var(--mediumpurple); /* Green */
+    border: none;
+    color: #7FDEFF;
+    text-align: center;
+    font-family: Amatic SC, Montserrat, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 25%;
+  }
+
+  .hobbybutton {
+    background: var(--mediumpurple);; /* Green */
+    border: none;
+    color: #7FDEFF;
+    text-align: center;
+    font-family: Amatic SC, Montserrat, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 25%;
+  }
+  .topbar{
+    display: flex;
+    flex-direction:row;
+    position: sticky;
+    top:0;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0), var(--medium)), url("https://media.discordapp.net/attachments/416001959779368962/1081722479027966073/bannerhires1.png?width=1440&height=562");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80px;
+  }
+  .logo{
+    height:80px;
+    width:auto;
+  }
+
+  }
+  .bannertxt{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--lightblue);
+    position:relative;
+    top: 20px;
+  }
+  .nav{
+    background: rgba(0, 0, 0, 0)
+    align-content:right;
+    height: 50px;
+    padding:10px;
+    margin: 10px;
+    color: var(--lightblue);
+    outline-color: var(--lightblue);
+  }
+  .topbuttons{
+    background: rgba(0, 0, 0, 0)
+    border: var(--lightblue);
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+  }
+  .field{
+    background-color: var(--lightblue);
+    text-align: center;
+    font-family: Garamond, Montserrat, sans-serif;
+    font-size: 24px;
+    color: var(--darkest);
+  }
+   /* Split the screen in half */
+.split {
+  display:flex;
+  height: 100%;
+  width: 33%;
+  position: absolute;
+  z-index: 1;
+  top: 80 px;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #4f518c;
+}
+
+.center {
+  left: 33%;
+  background-color: #1D1B33;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+}
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #4f518c;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 100%;
+  border-radius: 50%;
+} 
+</style>
+  
+<body>
+ <div class="banner">
+    <div class="topbar">
+        <a href="https://tjfriender.sites.tjhsst.edu/"><img class="logo" src="https://media.discordapp.net/attachments/416001959779368962/1081687213571575970/Dz3Gyd2XZrVZAAAAAElFTkSuQmCC.png?width=507&height=281"></a>
+      
+    </div>
+  
+  
+  
+    
+  </div>
+  <div>
+    <div class = "split left">
+      <div class = "centered">
+        <h1>Friends!</h1>
+        <br>
+        <h2>
+          <table>
+          <tr>
+            <th>Friend</th>
+            <th>Streak</th>
+            <th>Send Love!</th>
+          </tr>
+          <tr>
+          
+            <td><p>Cameron Ake</p></td>
+            <script>
+              function incrementCount()
+              {
+                var current = parseInt(document.getElementById("am").innerHTML);
+                var updated = current++;
+                document.getElementById("am").innerHTML = updated.toString();
+              }
+            </script>
+            <td><p id = "mommy">0</p>
+              <script>
+              function incrementCount()
+              {
+                let current = parseInt(document.getElementById("mommy").innerHTML);
+                let updated = current+1;
+                document.getElementById("mommy").innerHTML = updated.toString();
+              }
+            </script>
+            </td>
+            <td><button class = "button" type = "button" onclick = incrementCount()>Head Pat</button></td>
+          <tr>
+            <td><p>Alyssa McGowan</p>
+               <script>
+                function incrementCountEachTime()
+                {
+                let current = parseInt(document.getElementById("534").innerHTML);
+                let updated = current+1;
+                document.getElementById("534").innerHTML = updated.toString();
+                }
+            </script>
+            </td>
+            <td><p id = "534">0</p></td>
+            <td><button class = "button" type = "button" onclick=incrementCountEachTime()>Head Pat</button></td>
+          </tr>
+          <tr>
+            <td><p>Claire Peng</p>
+            <script>
+              function incrementCountEach()
+              {
+                let current = parseInt(document.getElementById("am").innerHTML);
+                let updated = current+1;
+                document.getElementById("am").innerHTML = updated.toString();
+              }
+            </script>
+            </td>
+            <td><p id = "am">0</p></td>
+            <td><button class = "button" type = "button" onclick=incrementCountEach()>Head Pat</button></td>
+          </tr>
+        </table></h2>
+        <div class="tenor-gif-embed" data-postid="16328031" data-share-method="host" data-aspect-ratio="1.46789" data-  width="100%"><a href="https://tenor.com/view/pat-duck-cute-love-sparkle-gif-16328031">Pat Duck Sticker</a>from <a href="https://tenor.com/search/pat-stickers">Pat Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      </div>
+       
+    </div>
+    <div class = "split center">
+      <div class = "centered">
+        <h1>Find Your Next Bestie!</h1>
+      
+        <script>
+          function myFunction(){
+            var current_image = document.getElementById("demo").src;
+            if (current_image == "https://cdn.discordapp.com/attachments/838227900087009302/1081711759976566824/kazuha.png") {
+              pic = "https://cdn.discordapp.com/attachments/838227900087009302/1081711759682977832/chongyun.png"
+              title = "Chongyun"
+              hobbies = "Hobbies: Running away from ghosts, reading, hanging out with xingqiu"
+              catchphrase = "I ride on wind and cloud alike."
+              
+            } else if (current_image == "https://cdn.discordapp.com/attachments/838227900087009302/1081711760307933284/yurio.jpg"){
+             pic = "https://cdn.discordapp.com/attachments/838227900087009302/1081711759976566824/kazuha.png"
+             title = "Kazuha Kaedehara"
+             hobbies = "Hobbies: Sitting by myself, playing music, watching the sky"
+             catchphrase = "I follow the wind."}
+              else if (current_image == "https://cdn.discordapp.com/attachments/838227900087009302/1081711759682977832/chongyun.png"){
+                pic = "https://cdn.discordapp.com/attachments/838227900087009302/1081807811555631234/mwox1000ipad_2_skin-pad750x1000f8f8f8.jpg"
+                title = "Xiao"
+                hobbies = "Hobbies: killing demons, sulking"
+                catchphrase = "I deal in death. If you cannot bring yourself to kill — speak my name."
+              }
+            else{
+             pic = "https://cdn.discordapp.com/attachments/838227900087009302/1081711760307933284/yurio.jpg"
+             title = "Yuri Plisetsky"
+             hobbies = "Hobbies: ice skating, running away from people"
+             catchphrase = "If you don't have any inspiration left, you're as good as dead."
+            }
+        
+           document.getElementById("demo").src = pic;
+           document.getElementById("mon").innerHTML = title;
+           document.getElementById("str").innerHTML = hobbies;
+           document.getElementById("ate").innerHTML = catchphrase;
+         }
+        </script> 
+
+    
+      <img id = "demo" src = "https://cdn.discordapp.com/attachments/838227900087009302/1081711759976566824/kazuha.png">
+        <h2 id = "mon">Kazuha Kaedehara</h2>
+        <p id = "str">Hobbies: Sitting by myself, playing music, watching the sky</p>
+        <p id = "ate">I follow the wind.</p>
+      <button class = "button" onclick=myFunction()>Nah</button>
+      <button class = "button"> Yes! </button>
+      </div>
+      </div>
+    <div class = "split right">
+      <div class = "centered">
+	      <img src = "https://cdn.discordapp.com/attachments/838227900087009302/1081792620646383667/xingqiu.png">
+        <br>
+        <br>
+        <h1>My Profile</h1>
+        <p>Username: <%=username%></p>
+        <p>Total friends: 3</p>
+        <p>Hobbies: </p> <p id = "currentlist">Existing</p>
+        <h1>Add Hobbies: </h1>
+        <input id = "hobby" class="field" type="text" name="uname" placeholder="Enter here">
+        <script>
+          function addtlHobby(){
+            var x = document.getElementById("hobby").value;
+            if(document.getElementById("currentlist").innerHTML === "Existing"){
+              var y = x;
+            }
+            else{
+              var y = document.getElementById("currentlist").innerHTML + ", " + x;
+            }
+            document.getElementById("currentlist").innerHTML = y;
+            document.getElementById("hobby").value = " ";
+          }
+        </script>
+        <button class = "hobbybutton" type = "button" onclick = addtlHobby()>Go!</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://tjfriender.sites.tjhsst.edu/"><button class = "button">Return Home</button></a>
+      </div>
+    </div>
+  </div>
+</body>
+  
+</html>
